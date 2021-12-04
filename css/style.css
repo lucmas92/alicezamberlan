@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    font-family: 'Quicksand';
+}
 nav a{
     text-underline-offset: 5px;
 }
