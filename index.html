@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="utf-8">
@@ -12,28 +12,34 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
 
-    <!--    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" rel="stylesheet">
+
+    <!--    <link rel="manifest" href="/site.webmanifest">-->
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/line.css">
     <link rel="stylesheet" href="css/tailwind.css">
 </head>
 
-<body class="bg-white">
+<body class="bg-white dark:bg-gray-900">
+
 
 <!-- HEADER -->
-<header class="flex flex-wrap items-center justify-between px-12 bg-white h-24 md:h-32 -mb-32 relative sticky z-50 top-0 md:top-auto shadow-md md:shadow-none">
+<header class="dark:bg-gray-900 text-white flex flex-wrap items-center justify-between px-12 bg-white h-24 md:h-32 -mb-32 relative sticky z-50 top-0 md:top-auto shadow-md md:shadow-none">
     <nav class="order-last md:order-first w-full md:flex-1">
         <ul class="flex-1 flex justify-center md:justify-start list-reset">
             <li>
-                <a href="index.html" class="text-sm text-gray-darker underline hover:text-black">Home</a>
+                <a href="index.html" class="text-sm px-3 py-2 text-gray-900 dark:text-gray-200 underline">Home</a>
             </li>
             <li class="ml-8">
-                <a href="about.html" class="text-sm text-gray-darker no-underline hover:text-black">About</a>
+                <a href="about.html"
+                   class="text-sm px-3 py-2 text-gray-900 dark:text-gray-200 hover:underline">About</a>
             </li>
             <li class="ml-8">
-                <a href="contact.html" class="text-sm text-gray-darker no-underline hover:text-black">Contact</a>
+                <a href="contact.html" class="text-sm px-3 py-2 text-gray-900 dark:text-gray-200 hover:underline">Contact</a>
             </li>
         </ul>
     </nav>
@@ -46,18 +52,18 @@
 
     <!--    HEADER SOCIAL LINKS-->
     <ul class="flex-1 flex justify-center md:justify-end list-reset gap-x-2">
-        <li class="hidden md:inline hover:bg-gray-900 hover:text-white transition duration-500">
+        <li class="hidden md:inline hover:bg-gray-900 text-gray-900 dark:text-gray-200 dark:hover:bg-gray-200 dark:hover:text-black hover:text-gray-200 transition duration-400">
             <a href="#" class="w-6 mx-1">
                 <i class="uil uil-facebook-f"></i>
             </a>
         </li>
-        <li class="hidden md:inline hover:bg-gray-900 hover:text-white transition duration-500">
-            <a href="#" class="w-6 mx-1 hover:border">
+        <li class="hidden md:inline hover:bg-gray-900 text-gray-900 dark:text-gray-200 dark:hover:bg-gray-200 dark:hover:text-black hover:text-gray-200 transition duration-400">
+            <a href="#" class="w-6 mx-1">
                 <i class="uil uil-linkedin"></i>
             </a>
         </li>
-        <li class="hidden md:inline hover:bg-gray-900 hover:text-white transition duration-500">
-            <a href="#" class="w-6 mx-1 hover:border">
+        <li class="hidden md:inline hover:bg-gray-900 text-gray-900 dark:text-gray-200 dark:hover:bg-gray-200 dark:hover:text-black hover:text-gray-200 transition duration-400">
+            <a href="#" class="w-6 mx-1">
                 <i class="uil uil-instagram"></i>
             </a>
         </li>
@@ -69,15 +75,16 @@
 
 
 <!-- INTRO -->
-<div class="w-full flex flex-wrap md:h-screen pt-32">
+<div class="w-full flex flex-wrap md:h-full lg:h-screen pt-32 dark:text-gray-400 dark:bg-gray-900">
     <div class="pt-6 md:pt-0 w-full md:flex-1 md:order-last">
-        <img alt="" src="img/work-6.webp" class="w-full h-64 md:h-full object-cover shadow-xl">
+        <img alt="" src="img/work-6.webp"
+             class="w-full h-64 md:h-full md:max-h-96 lg:max-h-screen object-cover shadow-xl">
     </div>
     <div class="w-full p-6 pb-12 md:p-12 md:w-5/12 flex justify-center items-center relative">
-        <div class="w-full relative text-center py-12 px-12 md:p-0 md:text-right sticky top-0">
+        <div class="w-full relative text-center py-12 px-12 md:p-0 md:text-right">
             <h1 class="text-5xl mb-4 pt-4">Alice Zamberlan</h1>
             <h2 class="text-2xl mb-4">creative services</h2>
-            <p class="leading-loose tracking-wide text-gray-700">
+            <p class="leading-loose tracking-wide text-gray-700 dark:text-gray-400">
                 I’m a branding expert who has a passion for all things design. Everything I do is crafted with integrity
                 and attention to detail.
                 I’m known best for my custom, hand-made elements, that I include in nearly every brand that I design.
@@ -87,8 +94,9 @@
 </div>
 <!--FINE INTRO -->
 
+
 <!-- PORTFOLIO -->
-<div class="py-24 bg-gray-200 px-12 -mt-6">
+<div class="py-24 bg-gray-200 px-12 -mt-6 dark:bg-gray-700 dark:text-gray-400">
 
     <div class="container mx-auto flex flex-wrap">
         <div class="w-full md:w-1/2 md:pr-4 flex flex-wrap mb-12 md:mb-0">
@@ -108,11 +116,11 @@
         <div class="w-full md:w-1/2 md:pl-4">
             <h2 class="text-4xl mb-10">A collection of recent work</h2>
             <div class="max-w-lg">
-                <p class="mb-6 text-gray-700">
+                <p class="mb-6 text-gray-700 dark:text-gray-400">
                     Branding, graphic-design & illustration that tells your
                     story, leaves a lasting impression, and attracts your ideal clients!
                 </p>
-                <a href="#" class="inline-flex bg-black text-white px-6 py-3 text-sm hover:bg-gray-900 items-center">
+                <a href="#" class="my-button">
                     Find out more
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                          stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -127,8 +135,9 @@
 </div>
 <!--FINE PORTFOLIO-->
 
+
 <!-- FOOTER -->
-<footer class="bg-black text-white text-center text-sm py-12 md:py-24">
+<footer class="bg-gray-900 text-white text-center text-sm py-12 md:py-24">
     <div class="flex md:pb-5 px-3 m-auto pt-5 border-t border-gray-500 text-gray-400 text-sm
             flex-col md:flex-row w-3/4">
         <div class="mt-2">
@@ -152,6 +161,12 @@
     </div>
 </footer>
 <!-- FINE FOOTER-->
+<script>
+    const scroller = new LocomotiveScroll({
+        el: document.querySelector('BODY'),
+        smooth: true
+    });
+</script>
 </body>
 </html>
 

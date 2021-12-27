@@ -9,3 +9,16 @@ body{
 nav a{
     text-underline-offset: 5px;
 }
+
+@layer utilities {
+    .my-button {
+        @apply inline-flex bg-black text-white px-6 py-3 text-sm hover:bg-gray-900 dark:bg-gray-400 dark:hover:bg-gray-500 dark:text-black items-center;
+    }
+    .my-button svg {
+        @apply transition ease-in-out duration-500;
+    }
+
+    .my-button:hover svg{
+        @apply translate-x-2
+    }
+}

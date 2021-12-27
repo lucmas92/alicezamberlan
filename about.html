@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <!--    <link rel="manifest" href="/site.webmanifest">-->
 
     <!--    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/font.css">
@@ -23,17 +23,17 @@
 <body class="bg-white">
 
 <!-- HEADER -->
-<header class="flex flex-wrap items-center justify-between px-12 bg-white h-24 md:h-32 -mb-32 relative sticky z-50 top-0 md:top-auto shadow-md md:shadow-none">
+<header class="dark:bg-gray-900 text-white flex flex-wrap items-center justify-between px-12 bg-white h-24 md:h-32 -mb-32 relative sticky z-50 top-0 md:top-auto shadow-md md:shadow-none">
     <nav class="order-last md:order-first w-full md:flex-1">
         <ul class="flex-1 flex justify-center md:justify-start list-reset">
             <li>
-                <a href="index.html" class="text-sm text-gray-darker no-underline hover:text-black">Home</a>
+                <a href="index.html" class="text-sm px-3 py-2 text-gray-900 dark:text-gray-200 hover:underline">Home</a>
             </li>
             <li class="ml-8">
-                <a href="about.html" class="text-sm text-gray-darker underline hover:text-black">About</a>
+                <a href="about.html" class="text-sm px-3 py-2 text-gray-900 dark:text-gray-200 underline">About</a>
             </li>
             <li class="ml-8">
-                <a href="contact.html" class="text-sm text-gray-darker no-underline hover:text-black">Contact</a>
+                <a href="contact.html" class="text-sm px-3 py-2 text-gray-900 dark:text-gray-200 hover:underline">Contact</a>
             </li>
         </ul>
     </nav>
@@ -46,60 +46,60 @@
 
     <!--    HEADER SOCIAL LINKS-->
     <ul class="flex-1 flex justify-center md:justify-end list-reset gap-x-2">
-        <li class="hidden md:inline hover:bg-gray-900 hover:text-white transition duration-500">
+        <li class="hidden md:inline hover:bg-gray-900 text-gray-900 dark:text-gray-200 dark:hover:bg-gray-200 dark:hover:text-black hover:text-gray-200 transition duration-400">
             <a href="#" class="w-6 mx-1">
                 <i class="uil uil-facebook-f"></i>
             </a>
         </li>
-        <li class="hidden md:inline hover:bg-gray-900 hover:text-white transition duration-500">
-            <a href="#" class="w-6 mx-1 hover:border">
+        <li class="hidden md:inline hover:bg-gray-900 text-gray-900 dark:text-gray-200 dark:hover:bg-gray-200 dark:hover:text-black hover:text-gray-200 transition duration-400">
+            <a href="#" class="w-6 mx-1">
                 <i class="uil uil-linkedin"></i>
             </a>
         </li>
-        <li class="hidden md:inline hover:bg-gray-900 hover:text-white transition duration-500">
-            <a href="#" class="w-6 mx-1 hover:border">
+        <li class="hidden md:inline hover:bg-gray-900 text-gray-900 dark:text-gray-200 dark:hover:bg-gray-200 dark:hover:text-black hover:text-gray-200 transition duration-400">
+            <a href="#" class="w-6 mx-1">
                 <i class="uil uil-instagram"></i>
             </a>
         </li>
     </ul>
     <!--    FINE HEADER SOCIAL LINKS-->
+
 </header>
 <!-- FINE HEADER -->
 
 
-<!-- CONTATTI -->
-<div class="w-full flex flex-wrap lg:h-screen pt-32">
-    <div class="w-full p-6 pb-12 lg:p-12 lg:w-5/12 flex justify-center items-center relative">
-        <div class="w-full relative text-center py-12 px-12 lg:p-0 lg:text-right sticky top-0">
-            <h1 class="text-5xl mb-4 pt-4">About</h1>
-            <h2 class="text-2xl mb-4">Something about me</h2>
-        </div>
-    </div>
-    <div class="pt-6 md:pt-0 w-full lg:flex-1 bg-gray-900">
-        <div class="p-12 md:p-24 flex flex-col text-gray-400 text-xl lg:text-3xl font-light gap-y-3 leading-8">
+<div class="w-full flex flex-wrap md:h-full lg:h-screen pt-32 dark:text-gray-400 dark:bg-gray-900">
+    <div class="md:pt-6 w-full md:flex-1 md:order-last bg-gray-900 dark:bg-black">
+        <p class="p-4 lg:p-12 xl:p-24 text-gray-400 text-lg sm:text-xl lg:text-3xl font-light gap-y-3 leading-8 w-full h-72 md:h-full md:max-h-96 lg:max-h-screen object-cover shadow-xl">
             I design and develop services for customers of all sizes, specializing in creating stylish, modern websites,
             web services and online stores. My passion is to design digital user experiences through the bold interface
-            and meaningful interactions.
-
+            and meaningful interactions.<br/>
             I design and develop services for customers of all sizes, specializing in creating stylish, modern websites,
             web services and online stores.
+        </p>
+    </div>
+    <div class="w-full p-6 pb-12 md:p-12 md:w-5/12 flex justify-center items-center relative order-first">
+        <div class="w-full relative text-center py-12 px-12 md:p-0 md:text-right">
+                        <h1 class="text-5xl mb-4 pt-4">About</h1>
+                        <h2 class="text-2xl mb-4">Something about me</h2>
         </div>
     </div>
 </div>
-<!--CONTATTI -->
-
-<div class="-mt-6 px-6 py-24 bg-gray-200 h-screen">
 
 
+<div class="py-24 bg-gray-200 px-12 -mt-6 dark:bg-gray-700 dark:text-gray-400">
     <section class="text-gray-600 body-font">
         <div class="container flex flex-wrap px-6 py-24 mx-auto items-center">
             <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter
-                    Taxidermy</h1>
-                <p class="leading-relaxed text-base">Locavore cardigan small batch roof party blue bottle blog meggings
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 dark:text-gray-200">
+                    Pitchfork Kickstarter Taxidermy
+                </h1>
+                <p class="leading-relaxed text-base dark:text-gray-400">
+                    Locavore cardigan small batch roof party blue bottle blog meggings
                     sartorial jean shorts kickstarter migas sriracha church-key synth succulents. Actually taiyaki
-                    neutra, distillery gastropub pok pok ugh.</p>
-                <a href="#" class="inline-flex bg-black text-white px-6 py-3 text-sm hover:bg-gray-900 items-center">
+                    neutra, distillery gastropub pok pok ugh.
+                </p>
+                <a href="#" class="my-button mt-3">
                     Find out more
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                          stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -108,31 +108,47 @@
                 </a>
             </div>
             <div class="flex flex-col md:w-1/2 md:pl-12">
-                <h2 class="title-font font-semibold text-gray-800 tracking-wider text-sm mb-3">CATEGORIES</h2>
+                <h2 class="title-font font-semibold text-gray-800 tracking-wider text-sm mb-3 text-white">CATEGORIES</h2>
                 <nav class="flex flex-wrap list-none -mb-1">
                     <li class="lg:w-1/3 mb-1 w-1/2">
-                        <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        <a class="text-gray-600 hover:text-gray-800 dark:text-gray-200 dark:hover:text-white cursor-pointer">
+                            First Link
+                        </a>
                     </li>
                     <li class="lg:w-1/3 mb-1 w-1/2">
-                        <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+                        <a class="text-gray-600 hover:text-gray-800 dark:text-gray-200 dark:hover:text-white cursor-pointer">
+                            Second Link
+                        </a>
                     </li>
                     <li class="lg:w-1/3 mb-1 w-1/2">
-                        <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+                        <a class="text-gray-600 hover:text-gray-800 dark:text-gray-200 dark:hover:text-white cursor-pointer">
+                            Third Link
+                        </a>
                     </li>
                     <li class="lg:w-1/3 mb-1 w-1/2">
-                        <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+                        <a class="text-gray-600 hover:text-gray-800 dark:text-gray-200 dark:hover:text-white cursor-pointer">
+                            Fourth Link
+                        </a>
                     </li>
                     <li class="lg:w-1/3 mb-1 w-1/2">
-                        <a class="text-gray-600 hover:text-gray-800">Fifth Link</a>
+                        <a class="text-gray-600 hover:text-gray-800 dark:text-gray-200 dark:hover:text-white cursor-pointer">
+                            Fifth Link
+                        </a>
                     </li>
                     <li class="lg:w-1/3 mb-1 w-1/2">
-                        <a class="text-gray-600 hover:text-gray-800">Sixth Link</a>
+                        <a class="text-gray-600 hover:text-gray-800 dark:text-gray-200 dark:hover:text-white cursor-pointer">
+                            Sixth Link
+                        </a>
                     </li>
                     <li class="lg:w-1/3 mb-1 w-1/2">
-                        <a class="text-gray-600 hover:text-gray-800">Seventh Link</a>
+                        <a class="text-gray-600 hover:text-gray-800 dark:text-gray-200 dark:hover:text-white cursor-pointer">
+                            Seventh Link
+                        </a>
                     </li>
                     <li class="lg:w-1/3 mb-1 w-1/2">
-                        <a class="text-gray-600 hover:text-gray-800">Eighth Link</a>
+                        <a class="text-gray-600 hover:text-gray-800 dark:text-gray-200 dark:hover:text-white cursor-pointer">
+                            Eighth Link
+                        </a>
                     </li>
                 </nav>
             </div>
@@ -142,7 +158,7 @@
 </div>
 
 <!-- FOOTER -->
-<footer class="bg-black text-white text-center text-sm py-12 md:py-24">
+<footer class="bg-gray-900 text-white text-center text-sm py-12 md:py-24">
     <div class="flex md:pb-5 px-3 m-auto pt-5 border-t border-gray-500 text-gray-400 text-sm
             flex-col md:flex-row w-3/4">
         <div class="mt-2">
